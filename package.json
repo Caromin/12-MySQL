@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/Caromin/12-MySQL.git"
   },
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^3.0.6",
-    "mysql": "^2.13.0"
+    "mysql": "^2.13.0",
+    "nodemon": "^1.12.1"
   }
 }

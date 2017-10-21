@@ -1,3 +1,7 @@
+//this is the dummy data that will create, use, and insert 10 different items with multiple different columns
+//you can add this file in sql workbench instead of manually inputting the info
+create database bamazon;
+
 USE bamazon;
 
 CREATE TABLE products(
