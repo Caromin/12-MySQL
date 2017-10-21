@@ -39,13 +39,13 @@ function search(results) {
 
 	}]).then (function(orderId) {
 		//REMEMBER THESE orderId.order ARE STRINGS, SO '2' > 10 IS FALSE, SO NO ERROR
-		if (orderId.order === undefined || orderId.order > 10 || orderId.order <= 0 || isNaN(orderId.order) ) {
+		if (orderId.order === 'finished') {
+			connection.end();
+		} else if (orderId.order === undefined || orderId.order > 10 || orderId.order <= 0 || isNaN(orderId.order) ) {
 			console.log("Sorry, there was a problem with one of the numbers inputted, please checkout again");
 			shopAgain();
 			return;
-		} else if (orderId.order === 'finished') {
-			connection.end();
-		} else {	
+		}  else {	
 			inquirer.prompt ([{
 				type: "input",
 				message: "How Many?",
